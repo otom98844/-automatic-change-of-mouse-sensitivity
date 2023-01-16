@@ -1,0 +1,15 @@
+function adjustMouseSensitivity(sensitivity) {
+    document.onmousemove = function(e) {
+        e = e || window.event;
+        var x = e.clientX * sensitivity;
+        var y = e.clientY * sensitivity;
+        // do something with the adjusted x and y values
+    }
+}
+
+
+This function takes in a sensitivity parameter, which is used to multiply the mouse's x and y coordinates. The adjusted x and y values can then be used to perform some action, such as moving an element on the screen.
+
+You can call this function with a desired sensitivity value, for example:
+
+adjustMouseSensitivity(0.5);
